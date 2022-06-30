@@ -17,7 +17,7 @@ class ProductController extends Controller
 
     public function create(ProductRequest $request){
 
-        return Product::create(["name"=>$request->name,"SKU"=>$request->SKU]) ? ['message'=>"Deleted Succsessfuly"] : ['message'=>"Ops invalid Input"];
+        return Product::create(["name"=>$request->name,"SKU"=>$request->SKU]) ? ['message'=>"created Succsessfuly"] : ['message'=>"Ops invalid Input"];
     }
 
     public function update(Product $id,ProductRequest $request){
